@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="css/index.css">
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css">
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 <body>
     
@@ -18,14 +19,14 @@
             <div class="header__inner">
                 <img class="header__logo" src="./img/logo.png" alt="logo">
                 <nav class="header__menu">
-                    <a href="#main" class="header__menu-link header__menu-link--active">Main</a>
+                    <a href="#home" class="header__menu-link">Home</a>
                     <a href="#music" class="header__menu-link">Music</a>
-                    <a href="#" class="header__menu-link">Video</a>
+                    <a href="#video" class="header__menu-link">Video</a>
                 </nav>
             </div>
         </div>
     </header>
-    <div class="content" id="main">
+    <div class="content" id="home">
         <div class="container">
             <div class="content__videobox">
                 <div class="content__description">
@@ -40,13 +41,39 @@
         </div>
     </div>
     <div class="music-content" id="music">
+        <div class="container">
+            <h1 class="music-content__header">Music</h1>
+            <div class="music-content__all-music">
+                <a class="music-content__album" href="https://fanlink.to/al1">
+                    <div class="music-content__album-name">Let Go</div>
+                </a>
+                <a class="music-content__album" href="https://fanlink.to/al2">
+                    <div class="music-content__album-name">Under My Skin</div>
+                </a>
+                <a class="music-content__album" href="https://fanlink.to/al3">
+                    <div class="music-content__album-name">The Best Damn Thing</div>
+                </a>
+                <a class="music-content__album" href="https://fanlink.to/al4">
+                    <div class="music-content__album-name">Goodbye Lullaby</div>
+                </a>
+                <a class="music-content__album" href="https://fanlink.to/al5">
+                    <div class="music-content__album-name">Avril Lavigne</div>
+                </a>
+                <a class="music-content__album" href="https://avrillavigne.lnk.to/HeadAboveWaterAlbumFA">
+                    <div class="music-content__album-name">Head Above Water</div>
+                </a>
+            </div>
+        </div>
         
     </div>
+
+    <div class="video-content" id="video"></div>
 
 
 
 
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="index.js"></script>
 </body>
 </html>
