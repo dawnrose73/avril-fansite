@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', () => {
 
     const videobox = document.querySelector('.content__videobox');
@@ -45,3 +46,18 @@ document.addEventListener('DOMContentLoaded', () => {
         activeLinks();
     })
 })
+
+const mySwiper = new Swiper('.swiper-container', {
+    slidesPerView: 3,
+    loop: true,
+    navigation: {
+        nextEl: '.video-content__button-next',
+        prevEl: '.video-content__button-prev',
+      },
+    // breakpoints: {
+    //     540: {
+    //       slidesPerView: 2
+    //     }
+    // }
+
+});

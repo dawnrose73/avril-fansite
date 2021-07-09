@@ -2,6 +2,13 @@
 
 $font: 'Cinzel', serif;
 
+@mixin videoCardBg($url) {
+    background: linear-gradient(180deg, rgba(20, 18, 24, 0.5) 0%, #2D2D2D 100%), url($url);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -17,6 +24,22 @@ body {
 a {
     text-decoration: none;
 }
+
+.title {
+    color: #fff;
+    font-family: $font;
+    font-weight: 500;
+    font-size: 80px;
+}
+
+.subtitle {
+    color: #fff;
+    font-family: $font;
+    font-weight: 500;
+    font-size: 40px;
+    text-decoration: underline;
+}
+
 
 .container {
     width: 95%;
@@ -138,19 +161,12 @@ a {
     align-items: center;
 }
 
-.music-content__header {
-    color: #fff;
-    font-family: $font;
-    font-weight: 500;
-    font-size: 80px;
-    margin-bottom: 50px;
-}
-
 .music-content__all-music {
     display: flex;
     max-width: 990px;
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: 50px;
 }
 
 .music-content__album {
@@ -209,3 +225,159 @@ a {
     height: 930px;
     padding-top: 200px;
 }
+
+.video-content > .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video-content__official {
+    margin-top: 50px;
+}
+
+.video-content__official-video-slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+
+.video-content__swiper-container {
+    max-width: 1440px;
+}
+
+.video-content__swiper-wrapper {
+    display: flex;
+    justify-content: baseline;
+}
+
+.video-content__card {
+    width: 400px;
+    height: 300px;
+    border-radius: 8px;
+    display: flex;
+    margin-left: 40px;
+}
+
+.video-1 {
+    @include videoCardBg('../img/complicated.jpeg');
+}
+
+.video-2 {
+    @include videoCardBg('../img/losing-grip.jpeg');
+}
+
+.video-3 {
+    @include videoCardBg('../img/sk8er-boi.jpeg');
+}
+
+.video-4 {
+    @include videoCardBg('../img/im-with-you.jpeg');
+}
+
+.video-5 {
+    @include videoCardBg('../img/he-wasnt.jpeg');
+}
+
+.video-6 {
+    @include videoCardBg('../img/dont-tell-me.jpeg');
+}
+
+.video-7 {
+    @include videoCardBg('../img/my-happy-ending.jpeg');
+}
+
+.video-8 {
+    @include videoCardBg('../img/nobodys-home.jpeg');
+}
+
+.video-9 {
+    @include videoCardBg('../img/girlfriend.jpeg');
+}
+
+.video-10 {
+    @include videoCardBg('../img/girlfriend-lil-mama.jpeg');
+}
+
+.video-11 {
+    @include videoCardBg('../img/the-best-damn-thing.jpeg');
+}
+
+.video-12 {
+    @include videoCardBg('../img/when-youre-gone.jpeg');
+}
+
+.video-13 {
+    @include videoCardBg('../img/hot.jpeg');
+}
+
+.video-14 {
+    @include videoCardBg('../img/what-the-hell.jpeg');
+}
+
+.video-15 {
+    @include videoCardBg('../img/smile.jpeg');
+}
+
+.video-16 {
+    @include videoCardBg('../img/wish-you-were-here.jpeg');
+}
+
+.video-17 {
+    @include videoCardBg('../img/goodbye.jpeg');
+}
+
+.video-18 {
+    @include videoCardBg('../img/alice.jpeg');
+}
+
+.video-19 {
+    @include videoCardBg('../img/heres-to-never-growing-up.jpeg');
+}
+
+.video-20 {
+    @include videoCardBg('../img/rock-n-roll.jpeg');
+}
+
+.video-21 {
+    @include videoCardBg('../img/hello-kitty.jpeg');
+}
+
+.video-22 {
+    @include videoCardBg('../img/let-me-go.jpeg');
+}
+
+.video-23 {
+    @include videoCardBg('../img/main-video.jpeg');
+}
+
+.video-24 {
+    @include videoCardBg('../img/tell-me-its-over.jpeg');
+}
+
+.video-25 {
+    @include videoCardBg('../img/fell-in-love-with-a-devil.jpeg');
+}
+
+.video-26 {
+    @include videoCardBg('../img/flames.jpeg');
+}
+
+.video-content__button-next {
+    width: 100px;
+    height: 100px; 
+    background: url('../img/arrow.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    cursor: pointer;
+}
+
+.video-content__button-prev {
+    @extend .video-content__button-next;
+    transform: rotate(180deg);
+}
+
+
