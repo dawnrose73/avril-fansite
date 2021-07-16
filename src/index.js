@@ -47,12 +47,42 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 })
 
-const mySwiper = new Swiper('.swiper-container', {
+const mySwiper = new Swiper('.video-content__swiper-container', {
     slidesPerView: 3,
     loop: true,
     navigation: {
         nextEl: '.video-content__button-next',
         prevEl: '.video-content__button-prev',
+      },
+    // breakpoints: {
+    //     540: {
+    //       slidesPerView: 2
+    //     }
+    // }
+
+});
+
+const mySwiperDoc = new Swiper('.video-content__doc-swiper-container', {
+    slidesPerView: 3,
+    loop: true,
+    navigation: {
+        nextEl: '.video-content__doc-button-next',
+        prevEl: '.video-content__doc-button-prev',
+      },
+    // breakpoints: {
+    //     540: {
+    //       slidesPerView: 2
+    //     }
+    // }
+
+});
+
+const mySwiperLive = new Swiper('.video-content__live-swiper-container', {
+    slidesPerView: 3,
+    loop: true,
+    navigation: {
+        nextEl: '.video-content__live-button-next',
+        prevEl: '.video-content__live-button-prev',
       },
     // breakpoints: {
     //     540: {

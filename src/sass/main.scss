@@ -222,7 +222,6 @@ a {
 }
 
 .video-content {
-    height: 930px;
     padding-top: 200px;
 }
 
@@ -232,23 +231,35 @@ a {
     align-items: center;
 }
 
-.video-content__official {
+.video-content__official,
+.video-content__documentary,
+.video-content__live {
     margin-top: 50px;
 }
 
-.video-content__official-video-slider {
+.video-content__official-video-slider,
+.video-content__documentary-video-slider,
+.video-content__live-video-slider {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 40px;
 }
 
+.video-content__live-video-slider {
+    margin-bottom: 80px;
+}
 
-.video-content__swiper-container {
+
+.video-content__swiper-container,
+.video-content__doc-swiper-container,
+.video-content__live-swiper-container {
     max-width: 1440px;
 }
 
-.video-content__swiper-wrapper {
+.video-content__swiper-wrapper,
+.video-content__doc-swiper-wrapper,
+.video-content__live-swiper-wrapper {
     display: flex;
     justify-content: baseline;
 }
@@ -365,7 +376,9 @@ a {
     @include videoCardBg('../img/flames.jpeg');
 }
 
-.video-content__button-next {
+.video-content__button-next,
+.video-content__doc-button-next,
+.video-content__live-button-next {
     width: 100px;
     height: 100px; 
     background: url('../img/arrow.png');
@@ -375,9 +388,66 @@ a {
     cursor: pointer;
 }
 
-.video-content__button-prev {
+.video-content__button-prev,
+.video-content__doc-button-prev,
+.video-content__live-button-prev {
     @extend .video-content__button-next;
     transform: rotate(180deg);
 }
 
 
+.doc-video-1 {
+    @include videoCardBg('../img/my-world-doc.jpeg');
+}
+
+.doc-video-2 {
+    @include videoCardBg('../img/diary.jpeg');
+}
+
+.doc-video-3 {
+    @include videoCardBg('../img/abc-family.jpeg');
+}
+
+.doc-video-4 {
+    @include videoCardBg('../img/bonez-tour.jpeg');
+}
+
+.doc-video-5 {
+    @include videoCardBg('../img/mtv-essentials.jpeg');
+}
+
+.doc-video-6 {
+    @include videoCardBg('../img/making-the-best-damn-thing.jpeg');
+}
+
+.live-video-1 {
+    @include videoCardBg('../img/try-to-shut-me-up.jpeg');
+}
+.live-video-2 {
+    @include videoCardBg('../img/live-in-seoul.jpeg');
+}
+.live-video-3 {
+    @include videoCardBg('../img/rock-am-ring.jpeg');
+}
+.live-video-4 {
+    @include videoCardBg('../img/live-at-aol.jpeg');
+}
+.live-video-5 {
+    @include videoCardBg('../img/live-at-budokan.jpeg');
+}
+.live-video-6 {
+    @include videoCardBg('../img/live-at-roxy.jpeg');
+}
+.live-video-7 {
+    @include videoCardBg('../img/avril-lavigne-tour-live.jpeg');
+}
+
+
+.footer {
+    height: 100px;
+    color: #fff;
+    font-family: $font;
+    font-weight: 300;
+    font-size: 15px;
+    display: flex;
+}
