@@ -1,8 +1,8 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
-    const videobox = document.querySelector('.content__videobox');
-    videobox.classList.add('content__videobox--animated');
+    const videobox = document.querySelector('.home__videobox');
+    videobox.classList.add('home__videobox--animated');
 
     const addActive = (item) => {
         item.classList.add('header__menu-link--active');
@@ -47,47 +47,29 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 })
 
-const mySwiper = new Swiper('.video-content__swiper-container', {
+const mySwiper = new Swiper('.official-swiper-container', {
     slidesPerView: 3,
     loop: true,
     navigation: {
-        nextEl: '.video-content__button-next',
-        prevEl: '.video-content__button-prev',
+        nextEl: '.official-button-next',
+        prevEl: '.official-button-prev',
       },
-    // breakpoints: {
-    //     540: {
-    //       slidesPerView: 2
-    //     }
-    // }
-
 });
 
-const mySwiperDoc = new Swiper('.video-content__doc-swiper-container', {
+const mySwiperDoc = new Swiper('.doc-swiper-container', {
     slidesPerView: 3,
     loop: true,
     navigation: {
-        nextEl: '.video-content__doc-button-next',
-        prevEl: '.video-content__doc-button-prev',
+        nextEl: '.doc-button-next',
+        prevEl: '.doc-button-prev',
       },
-    // breakpoints: {
-    //     540: {
-    //       slidesPerView: 2
-    //     }
-    // }
-
 });
 
-const mySwiperLive = new Swiper('.video-content__live-swiper-container', {
+const mySwiperLive = new Swiper('.live-swiper-container', {
     slidesPerView: 3,
     loop: true,
     navigation: {
-        nextEl: '.video-content__live-button-next',
-        prevEl: '.video-content__live-button-prev',
+        nextEl: '.live-button-next',
+        prevEl: '.live-button-prev',
       },
-    // breakpoints: {
-    //     540: {
-    //       slidesPerView: 2
-    //     }
-    // }
-
 });
