@@ -54,6 +54,7 @@ exports.css = css;
 exports.clear = clear;
 exports.img = img;
 exports.clearimg = clearimg;
+exports.build = series(clear, html, css, img, scripts);
 exports.serve = series(clear, html, css, img, scripts, serve);
 
 
