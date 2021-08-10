@@ -11,7 +11,7 @@
 // Общие стили (стили body и блоков)
 
 body {
-    background: url('../img/background-1.jpeg') 0 0 / cover no-repeat fixed;
+    background: url('../img/background.jpeg') 0 0 / cover no-repeat fixed;
     font-family: 'Cinzel', serif;
 }
 
@@ -41,7 +41,7 @@ body {
     left: 0; 
     right: 0;
     top: 0;
-    background: url('../img/background-1.jpeg') 0 0 / cover no-repeat fixed;
+    background: url('../img/background.jpeg') 0 0 / cover no-repeat fixed;
     &__inner {
         height: 200px;
         display: flex;
@@ -69,7 +69,7 @@ body {
 //Блок home, домашняя страница
 .home {
     padding-top: 200px;
-    height: 630px;
+    height: 730px;
     >.container {
         display: flex;
         justify-content: flex-end;
@@ -104,7 +104,7 @@ body {
         width: 502px;
         height: 313px;
         border-radius: 10px;
-        background: url('../img/main-video.jpeg') 0 0 / contain no-repeat;
+        background: url('../img/videos/official/omv-head-above-water.jpeg') 0 0 / contain no-repeat;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -150,22 +150,22 @@ body {
             }
         }
         &:nth-child(1) {
-            background-image: url('../img/let-go.jpeg');
+            background-image: url('../img/music/let-go.jpeg');
         }
         &:nth-child(2) {
-            background-image: url('../img/under-my-skin.jpg');
+            background-image: url('../img/music/under-my-skin.jpg');
         }
         &:nth-child(3) {
-            background-image: url('../img/the-best-damn-thing.jpg');
+            background-image: url('../img/music/the-best-damn-thing.jpg');
         }
         &:nth-child(4) {
-            background-image: url('../img/goodbye-lullaby.jpg');
+            background-image: url('../img/music/goodbye-lullaby.jpg');
         }
         &:nth-child(5) {
-            background-image: url('../img/avril-lavigne.jpeg');
+            background-image: url('../img/music/avril-lavigne.jpeg');
         }
         &:nth-child(6) {
-            background-image: url('../img/head-above-water.jpeg');
+            background-image: url('../img/music/head-above-water.jpeg');
         }
     }
     &__album-name {
@@ -220,7 +220,7 @@ body {
     &__button-next {
         width: 100px;
         height: 100px; 
-        background: url('../img/arrow.png') center center / cover no-repeat;
+        background: url('../img/icons/arrow.png') center center / cover no-repeat;
         cursor: pointer;
     }
 
@@ -240,161 +240,165 @@ body {
     }
 }
 
+// Установка фоновых изображений для карточек с 
+// официальными видеоклипами
 .video-1 {
-    @include videoCardBg('../img/complicated.jpeg');
+    @include videoCardBg('../img/videos/official/omv-complicated.jpeg');
 }
 
 .video-2 {
-    @include videoCardBg('../img/losing-grip.jpeg');
+    @include videoCardBg('../img/videos/official/omv-losing-grip.jpeg');
 }
 
 .video-3 {
-    @include videoCardBg('../img/sk8er-boi.jpeg');
+    @include videoCardBg('../img/videos/official/omv-sk8er-boi.jpeg');
 }
 
 .video-4 {
-    @include videoCardBg('../img/im-with-you.jpeg');
+    @include videoCardBg('../img/videos/official/omv-im-with-you.jpeg');
 }
 
 .video-5 {
-    @include videoCardBg('../img/he-wasnt.jpeg');
+    @include videoCardBg('../img/videos/official/omv-he-wasnt.jpeg');
 }
 
 .video-6 {
-    @include videoCardBg('../img/dont-tell-me.jpeg');
+    @include videoCardBg('../img/videos/official/omv-dont-tell-me.jpeg');
 }
 
 .video-7 {
-    @include videoCardBg('../img/my-happy-ending.jpeg');
+    @include videoCardBg('../img/videos/official/omv-my-happy-ending.jpeg');
 }
 
 .video-8 {
-    @include videoCardBg('../img/nobodys-home.jpeg');
+    @include videoCardBg('../img/videos/official/omv-nobodys-home.jpeg');
 }
 
 .video-9 {
-    @include videoCardBg('../img/girlfriend.jpeg');
+    @include videoCardBg('../img/videos/official/omv-girlfriend.jpeg');
 }
 
 .video-10 {
-    @include videoCardBg('../img/girlfriend-lil-mama.jpeg');
+    @include videoCardBg('../img/videos/official/omv-girlfriend-lil-mama.jpeg');
 }
 
 .video-11 {
-    @include videoCardBg('../img/the-best-damn-thing.jpeg');
+    @include videoCardBg('../img/videos/official/omv-the-best-damn-thing.jpeg');
 }
 
 .video-12 {
-    @include videoCardBg('../img/when-youre-gone.jpeg');
+    @include videoCardBg('../img/videos/official/omv-when-youre-gone.jpeg');
 }
 
 .video-13 {
-    @include videoCardBg('../img/hot.jpeg');
+    @include videoCardBg('../img/videos/official/omv-hot.jpeg');
 }
 
 .video-14 {
-    @include videoCardBg('../img/what-the-hell.jpeg');
+    @include videoCardBg('../img/videos/official/omv-what-the-hell.jpeg');
 }
 
 .video-15 {
-    @include videoCardBg('../img/smile.jpeg');
+    @include videoCardBg('../img/videos/official/omv-smile.jpeg');
 }
 
 .video-16 {
-    @include videoCardBg('../img/wish-you-were-here.jpeg');
+    @include videoCardBg('../img/videos/official/omv-wish-you-were-here.jpeg');
 }
 
 .video-17 {
-    @include videoCardBg('../img/goodbye.jpeg');
+    @include videoCardBg('../img/videos/official/omv-goodbye.jpeg');
 }
 
 .video-18 {
-    @include videoCardBg('../img/alice.jpeg');
+    @include videoCardBg('../img/videos/official/omv-alice.jpeg');
 }
 
 .video-19 {
-    @include videoCardBg('../img/heres-to-never-growing-up.jpeg');
+    @include videoCardBg('../img/videos/official/omv-heres-to-never-growing-up.jpeg');
 }
 
 .video-20 {
-    @include videoCardBg('../img/rock-n-roll.jpeg');
+    @include videoCardBg('../img/videos/official/omv-rock-n-roll.jpeg');
 }
 
 .video-21 {
-    @include videoCardBg('../img/hello-kitty.jpeg');
+    @include videoCardBg('../img/videos/official/omv-hello-kitty.jpeg');
 }
 
 .video-22 {
-    @include videoCardBg('../img/let-me-go.jpeg');
+    @include videoCardBg('../img/videos/official/omv-let-me-go.jpeg');
 }
 
 .video-23 {
-    @include videoCardBg('../img/main-video.jpeg');
+    @include videoCardBg('../img/videos/official/omv-head-above-water.jpeg');
 }
 
 .video-24 {
-    @include videoCardBg('../img/tell-me-its-over.jpeg');
+    @include videoCardBg('../img/videos/official/omv-tell-me-its-over.jpeg');
 }
 
 .video-25 {
-    @include videoCardBg('../img/fell-in-love-with-a-devil.jpeg');
+    @include videoCardBg('../img/videos/official/omv-fell-in-love-with-a-devil.jpeg');
 }
 
 .video-26 {
-    @include videoCardBg('../img/flames.jpeg');
+    @include videoCardBg('../img/videos/official/omv-flames.jpeg');
 }
 
 
-
-
-
+// Установка фоновых изображений для карточек с 
+// документалками
 .doc-video-1 {
-    @include videoCardBg('../img/my-world-doc.jpeg');
+    @include videoCardBg('../img/videos/documentary/doc-my-world.jpeg');
 }
 
 .doc-video-2 {
-    @include videoCardBg('../img/diary.jpeg');
+    @include videoCardBg('../img/videos/documentary/doc-diary.jpeg');
 }
 
 .doc-video-3 {
-    @include videoCardBg('../img/abc-family.jpeg');
+    @include videoCardBg('../img/videos/documentary/doc-abc-family.jpeg');
 }
 
 .doc-video-4 {
-    @include videoCardBg('../img/bonez-tour.jpeg');
+    @include videoCardBg('../img/videos/documentary/doc-bonez-tour.jpeg');
 }
 
 .doc-video-5 {
-    @include videoCardBg('../img/mtv-essentials.jpeg');
+    @include videoCardBg('../img/videos/documentary/doc-mtv-essentials.jpeg');
 }
 
 .doc-video-6 {
-    @include videoCardBg('../img/making-the-best-damn-thing.jpeg');
+    @include videoCardBg('../img/videos/documentary/doc-making-the-best-damn-thing.jpeg');
 }
 
+
+// Установка фоновых изображений для карточек с 
+// видеозаписями концертов и выступлений
 .live-video-1 {
-    @include videoCardBg('../img/try-to-shut-me-up.jpeg');
+    @include videoCardBg('../img/videos/performances/live-try-to-shut-me-up.jpeg');
 }
 .live-video-2 {
-    @include videoCardBg('../img/live-in-seoul.jpeg');
+    @include videoCardBg('../img/videos/performances/live-in-seoul.jpeg');
 }
 .live-video-3 {
-    @include videoCardBg('../img/rock-am-ring.jpeg');
+    @include videoCardBg('../img/videos/performances/live-rock-am-ring.jpeg');
 }
 .live-video-4 {
-    @include videoCardBg('../img/live-at-aol.jpeg');
+    @include videoCardBg('../img/videos/performances/live-at-aol.jpeg');
 }
 .live-video-5 {
-    @include videoCardBg('../img/live-at-budokan.jpeg');
+    @include videoCardBg('../img/videos/performances/live-at-budokan.jpeg');
 }
 .live-video-6 {
-    @include videoCardBg('../img/live-at-roxy.jpeg');
+    @include videoCardBg('../img/videos/performances/live-at-roxy.jpeg');
 }
 .live-video-7 {
-    @include videoCardBg('../img/avril-lavigne-tour-live.jpeg');
+    @include videoCardBg('../img/videos/performances/live-avril-lavigne-tour.jpeg');
 }
 
-
+// Блок footer
 .footer {
     height: 100px;
     color: #fff;
