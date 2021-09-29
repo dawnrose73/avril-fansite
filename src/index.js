@@ -1,5 +1,30 @@
+const mySwiper = new Swiper('.official-swiper-container', {
+    slidesPerView: 3,
+    loop: true,
+    navigation: {
+        nextEl: '.official-button-next',
+        prevEl: '.official-button-prev',
+      },
+});
 
-document.addEventListener('DOMContentLoaded', () => {
+const mySwiperDoc = new Swiper('.doc-swiper-container', {
+    slidesPerView: 3,
+    loop: true,
+    navigation: {
+        nextEl: '.doc-button-next',
+        prevEl: '.doc-button-prev',
+      },
+});
+
+const mySwiperLive = new Swiper('.live-swiper-container', {
+    slidesPerView: 3,
+    loop: true,
+    navigation: {
+        nextEl: '.live-button-next',
+        prevEl: '.live-button-prev',
+      },
+});
+// document.addEventListener('DOMContentLoaded', () => {
 
     const videobox = document.querySelector('.home__videobox');
     videobox.classList.add('home__videobox--animated');
@@ -45,31 +70,32 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', () => {
         activeLinks();
     })
-})
 
-const mySwiper = new Swiper('.official-swiper-container', {
-    slidesPerView: 3,
-    loop: true,
-    navigation: {
-        nextEl: '.official-button-next',
-        prevEl: '.official-button-prev',
-      },
-});
+// })
 
-const mySwiperDoc = new Swiper('.doc-swiper-container', {
-    slidesPerView: 3,
-    loop: true,
-    navigation: {
-        nextEl: '.doc-button-next',
-        prevEl: '.doc-button-prev',
-      },
-});
+// const mySwiper = new Swiper('.official-swiper-container', {
+//     slidesPerView: 3,
+//     loop: true,
+//     navigation: {
+//         nextEl: '.official-button-next',
+//         prevEl: '.official-button-prev',
+//       },
+// });
 
-const mySwiperLive = new Swiper('.live-swiper-container', {
-    slidesPerView: 3,
-    loop: true,
-    navigation: {
-        nextEl: '.live-button-next',
-        prevEl: '.live-button-prev',
-      },
-});
+// const mySwiperDoc = new Swiper('.doc-swiper-container', {
+//     // slidesPerView: 3,
+//     // loop: true,
+//     navigation: {
+//         nextEl: '.doc-button-next',
+//         prevEl: '.doc-button-prev',
+//       },
+// });
+
+// const mySwiperLive = new Swiper('.live-swiper-container', {
+//     slidesPerView: 3,
+//     loop: true,
+//     navigation: {
+//         nextEl: '.live-button-next',
+//         prevEl: '.live-button-prev',
+//       },
+// });
